@@ -8,7 +8,7 @@ function getWeather() {
   }
 
   const city = encodeURIComponent(rawCity);
-  const apiKey = "3532e2cf98a5a0a8448ae9fc8f06a958";
+  const apiKey = "MY_API_KEY_HERE";// For security, the live API key is not included in the public repo, but the code works when tested locally.
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   weatherBox.innerHTML = `<p>Loading weather data...</p>`;
